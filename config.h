@@ -40,7 +40,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-  { NULL, NULL, "firefox",       1 << 4,       False,       -1 }, 
+  { NULL, NULL, "",       1 << 4,       False,       -1 }, 
 };
 
 /* layout(s) */
@@ -83,6 +83,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F2,     spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_F3,     spawn,          {.v = filebrowsercmd } },
 	{ MODKEY|ShiftMask,             XK_F3,     spawn,          SHCMD("sudo pcmanfm") },
+	{ MODKEY,                       XK_F4,     spawn,          SHCMD("brave https://music.apple.com/us/listen-now") },
   { MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
