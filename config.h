@@ -84,7 +84,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F2,     spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_F3,     spawn,          {.v = filebrowsercmd } },
 	{ MODKEY|ShiftMask,             XK_F3,     spawn,          SHCMD("sudo pcmanfm") },
-  { MODKEY,                       XK_b,      togglebar,      {0} },
+  { MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
