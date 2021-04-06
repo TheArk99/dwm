@@ -41,7 +41,6 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
   { NULL, NULL, "pavucontrol",       1 << 5,       False,       -1 }, 
-  { NULL, NULL, "pcmanfm",       1 << 6,       False,       -1 }, 
 };
 
 /* layout(s) */
