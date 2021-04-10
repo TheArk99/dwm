@@ -32,8 +32,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", };
-static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", };
+static const char *tags[] = { "", "", "", "", "", "", "", "" };
+static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8" };
  
 
 static const Rule rules[] = {
@@ -42,7 +42,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-  { NULL, NULL, "pavucontrol",       1 << 5,       False,       -1 }, 
+  { "",  NULL,       NULL,       1 << 5,       1,           -1 },
 };
 
 /* layout(s) */
