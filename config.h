@@ -9,32 +9,36 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=12", "fontawesome:size=12" };
 static const char dmenufont[]       = "monospace:size=12";
 //background color
-static const char col_gray1[]       = "#111111";
-//inactive window border color 
-static const char col_gray2[]       = "#444444";
+//static const char col_gray1[]       = "#111111";
+//inactive window border color
+//static const char col_gray2[]       = "#444444";
 //font color
-static const char col_gray3[]       = "#bbbbbb";
+//static const char col_gray3[]       = "#bbbbbb";
 //current tag and current window font color
-static const char col_gray4[]       = "#eeeeee";
+//static const char col_gray4[]       = "#eeeeee";
 
 //Top bar second color (blue) and active window border color
 
 //darker blue original color
 //static const char col_cyan[]        = "#005577";
 
-//green 
-static const char col_cyan[]        = "#53ad45";
+//green
+//static const char col_cyan[]        = "#53ad45";
 
-static const char *colors[][3]      = {
+//static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-};
+//	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+//	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+//};
+
+//color sceme from PYWAL
+#include "/home/noah/.cache/wal/colors-wal-dwm.h"
+
 
 /* tagging */
 static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
- 
+
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -70,7 +74,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_recency", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_recency", "-m", dmenumon, "-fn", dmenufont, "-nb", norm_bg, "-nf", norm_fg, "-sb", sel_bg, "-sf", sel_fg, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *browsercmd[]  = { "brave", NULL };
 static const char *filebrowsercmd[]  = { "pcmanfm", NULL };
