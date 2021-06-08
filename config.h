@@ -41,12 +41,15 @@ static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 
 static const Rule rules[] = {
-	/* xprop(1):
-	 *	WM_CLASS(STRING) = instance, class
+ 	/* xprop(1):
+ 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
-	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-  { "firefox",  NULL,       NULL,       1 << 5,       1,           -1 },
+ 	 */
+ 	/* class      instance    title       tags mask     isfloating   monitor */
+ 	{ "Steam",  NULL,       NULL,       1 << 7,       0,           -1 },
+ 	{ "Lutris",  NULL,       NULL,       1 << 7,       0,           -1 },
+ 	{ "KeePassXC",  NULL,       NULL,       1 << 8,       0,           -1 },
+ 	{ "Pcmanfm",  NULL,       NULL,       1 << 6,       0,           -1 },
 };
 
 /* layout(s) */
